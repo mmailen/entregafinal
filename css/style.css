@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
 body{
-    background-color: rgb(204, 226, 245);
+    font-family: 'Roboto', sans-serif;
+    background-color: #F3F3F3;
 }
 
 footer{
@@ -16,16 +19,25 @@ footer{
 }
 
 header{
-border: 1px solid black;
-text-align: center;
-padding: 10px 20px;
-height: auto;
-flex-direction: column;
-text-align: center;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+    height: auto;
+    flex-direction: column;
+    }    
+
+.verde {
+    color: #7AB730;
 }
 
+
+
 .logo{
-    width: 250px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
 }
 
 nav ul li{
@@ -41,20 +53,145 @@ a{
     color: rgb(42, 160, 6);
 }
 
-main{
-    margin: 10px;
+.banner {
+    background-image: url("../multimedia/banner.PNG");
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.bannerContenido {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bannerContenido h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.bannerContenido p {
+    color: #FAFAFA;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.banneraboutus {
+    background-image: url("../multimedia/aboutus.PNG");
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banneraboutus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+}
+
+.bannerContenidoaboutus{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bannerContenidoaboutus h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.bannerContenidoaboutus p {
+    color: #FAFAFA;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Rubik Mono One', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutus h2 {
+    color: #9828a7;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+
+
+
+.servicios{
+        text-align: center;
+        margin: 10vh;
+        border-bottom: 1px solid violet;
+}
+
+.servicios h2 {
+    color: #9828a7;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.servicios p {
+    font-size: 2rem;
+    color: #3949a1;
     padding: 10px;
 }
 
-h1{
-    text-align: center;
-    color: rgb(197, 34, 197);
-    text-transform: uppercase;
-    margin: 10px 0px;
+.contenedorservicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.servicios{
-    margin: 10px;
+.servtarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
 }
 
 .imgservicios{
@@ -62,6 +199,11 @@ h1{
     width: 50%;
     height: auto;
 }
+
+.servtarjeta p {
+    margin: 10px 0;
+}
+
 
 form{
     margin-top: 20px;
@@ -95,6 +237,88 @@ textarea{
     margin-top: 10px;
 }
 
-@media (max-width:1023px)
+.nuestrosclientes {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid violet;
+}
 
+.nuestrosclientes h2{
+    color: #9828a7;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+
+.imgclientes{
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.clientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.clientestarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
+}
+
+/* responsive:  */
+
+@media (max-width:1023px) {
+
+    .servicios {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .servicios h2, 
+    .servicios p {
+        font-size: inherit;
+    }
+
+    .contenedorservicios {
+        flex-direction: column;
+    }
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nuestrosclientes {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    .nuestrosclientes h2 {
+        font-size: inherit;
+    }
+
+    .contenedorclientes {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .contenedorservicios {
+        grid-template-columns: 1fr;
+    }
+    .contenedorclientes {
+        grid-template-columns: 1fr;
+    }
+}
 

@@ -1,0 +1,37 @@
+
+@mixin an {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+    height: auto;
+    flex-direction: column;
+}
+
+.verde {
+    color: #7AB730;
+}
+
+.logo {
+    width: 200px;
+    display: $display;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    @include an;
+    font-weight: bold;
+    color: rgb(42, 160, 6);
+}

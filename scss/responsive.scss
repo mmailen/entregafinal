@@ -1,0 +1,43 @@
+
+@media (max-width: 1023px) {
+    .servicios {
+        margin: 5vh;
+        font-size: 2rem;
+
+        h2,
+        p {
+            font-size: inherit;
+        }
+    }
+
+    .contenedorservicios {
+        flex-direction: column;
+    }
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nuestrosclientes {
+        margin: 5vh;
+        font-size: 2rem;
+
+        h2 {
+            font-size: inherit;
+        }
+    }
+
+    .contenedorclientes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contenedorservicios,
+    .contenedorclientes {
+        grid-template-columns: 1fr;
+    }
+}
+  
